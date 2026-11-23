@@ -14,18 +14,17 @@ export default function AppTabs() {
       labelStyle={{ selected: { color: colors.text } }}>
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
-        />
+        <NativeTabs.Trigger.Icon sf="house.fill" md="home" />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
+      <NativeTabs.Trigger name="log-meal">
+        <NativeTabs.Trigger.Label>Log meal</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="camera.fill" md="photo_camera" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="profile">
+        <NativeTabs.Trigger.Label>Profile</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="person.fill" md="person" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );
